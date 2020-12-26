@@ -5,8 +5,8 @@ module.exports = ({ env }) => ({
       apiKey: env("SEND_GRID_KEY"),
     },
     settings: {
-      defaultFrom: "rampritsahani.sg@gmail.com",
-      defaultReplyTo: "rampritsahani.sg@gmail.com",
+      defaultFrom: "gve70475@zwoho.com",
+      defaultReplyTo: "gve70475@zwoho.com",
     },
   },
 });
