@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "category"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "categories"
+    },
+    "products": {
+      "via": "category",
+      "collection": "product"
+    }
+  }
+}
